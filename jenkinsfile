@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               echo "build phase completed successfully"
+               mvn "build phase completed successfully"
             }
         }
         stage('Test') {
             steps {
-               echo "test phase completed successfully"
+               mvn "test phase completed successfully"
             }
         }
         stage('Package') {
             steps {
-               echo "package new completed successfully"
+               mvn "package new completed successfully"
             }
         }
   
